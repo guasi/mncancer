@@ -1,0 +1,12 @@
+---
+output: html_fragment
+---
+
+This application was built **exclusively** as an exercise to learn R and Shiny. **This is not an official site.** 
+
+Visit source data at [Minnesota Public Health Data Access](https://data.web.health.state.mn.us/cancer_all)
+
+----
+
+2022 [Ingrid Lagos](http://guasi.github.io) 
+| Code: [github](https://github.com/guasi/mncancer)
