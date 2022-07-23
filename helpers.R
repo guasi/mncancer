@@ -1,4 +1,4 @@
-# shift i to top
+# shift i to top, i can be index or string
 shift_to_top <- function(x,i) {
   if (is.character(i)) { 
     i <- which(grepl(i,x))  
@@ -13,6 +13,7 @@ shift_to_top <- function(x,i) {
   }
 }
 
+# layout for plotly
 my_layout <- function(p, title) {
   layout(p = p,
          title   = title,
