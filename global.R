@@ -40,12 +40,6 @@ mn_map    <- sf::st_read(shapefile) %>%
              sf::st_as_sf() %>% 
              sf::st_transform(crs = "+proj=longlat +datum=WGS84")
 
-# THEME ------------------------------------------------------------------
-td_theme  <- bslib::bs_theme(version = 5,
-                            bootswatch = "cerulean",
-                            font_scale = .8,
-                            "table-cell-padding-y" = ".2rem")
-
 # MODULES AND HELPERS ----------------------------------------------------
 source("helpers.R")
 source("module_controls.R")

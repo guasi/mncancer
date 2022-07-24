@@ -16,10 +16,13 @@ shift_to_top <- function(x,i) {
 # layout for plotly
 my_layout <- function(p, title) {
   layout(p = p,
-         title   = title,
+         title   = list(text = title,
+                        y = 1,
+                        yanchor = "top",
+                        pad = list(t = 15)),
          xaxis   = list(title = ""),
          yaxis   = list(title = "Rate per 100,000 persons"),
-         margin  = list(t = 60, r = 50),
+         margin  = list(t = 70, r = 50),
          modebar = list(orientation = "v"),
          font    = list(size = 10))
 }

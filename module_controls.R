@@ -11,8 +11,7 @@ mod_controls_ui <- function(id) {
                             label     = vars[[x]],
                             choices   = NULL,
                             multiple  = ifelse(x == "location" & id == "plt", FALSE, TRUE),
-                            selectize = F)),
-    verbatimTextOutput(ns("verba"))
+                            selectize = F))
   )
 }
 

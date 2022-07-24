@@ -7,7 +7,7 @@ mod_map_ui <- function(id) {
                             inputId   = ns(x), 
                             label     = map_control_vars[[x]],
                             choices   = shift_to_top(sort(unique(mdat[[x]])),"All")))
-  # UI
+  
   tagList(
     fluidRow(
       box(width = 8,
@@ -18,7 +18,6 @@ mod_map_ui <- function(id) {
       )
     )
   )
-  
 }
 
 mod_map_server <- function(id) {

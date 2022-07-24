@@ -1,7 +1,7 @@
 
 mod_table_ui <- function(id) {
   ns <- NS(id)
-
+  
   tagList(
     fluidRow(
       box(width = 8,
